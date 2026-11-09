@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow" data-publish>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Metodica - удаление купероза IPL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+<style>
+:root{
+  --orange:#EA6852; --violet:#7A7598; --dark:#54565A; --grey:#E3E3E3; --light:#F3F3F3; --white:#fff;
+  --serif:"Palatino Linotype","Book Antiqua",Palatino,"URW Palladio L",Georgia,serif;
+  --sans:"Tenor Sans",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--white);color:var(--dark);font-family:var(--sans);font-size:16px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit;color:inherit}
+.wrap{position:relative;width:100%;max-width:1366px;margin:0 auto;padding:0 128px}
+.page{position:relative}
+:root{--gut:max(0px, calc((100vw - 1366px) / 2))}
+.stage{position:relative;max-width:1366px;margin:0 auto;height:100%}
+.bl{margin-left:calc(var(--gut) * -1)}
+.br{margin-right:calc(var(--gut) * -1)}
+section,.map,footer{background:var(--light);position:relative}
+section{overflow:hidden;overflow:clip;overflow-clip-margin:0}
+.h2{font-family:var(--serif);font-weight:400;font-size:45px;line-height:1.16;color:var(--dark)}
+.v{color:var(--violet)} .o{color:var(--orange)} .d{color:var(--dark)} .w{color:var(--light)}
+.deco{position:absolute;pointer-events:none;z-index:0}
+.spark{width:32px;height:32px;flex:none}
+.spark{fill:none;stroke:currentColor;stroke-width:1.6}
+.spark.fill{fill:currentColor;stroke:none}
+:focus-visible{outline:2px solid var(--violet);outline-offset:3px}
+
+/* ---------- Форма (обложка и финал) ---------- */
+.lead-card{position:relative;width:335px;padding:26px 38px 40px;background:rgba(102,99,102,.9);border:1px solid #fff;border-radius:30px 45px 0 45px;color:var(--grey);z-index:2}
+.lead-card .star{position:absolute;left:-27px;top:-27px;width:54px;height:54px;color:#fff}
+.lead-card .star{stroke-width:1.2}
+.lead-card h3{font-family:var(--serif);font-weight:400;font-size:25px;line-height:1.36;margin-bottom:22px}
+.field{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--grey);margin-bottom:22px;padding:4px 0 3px}
+.field input{flex:1;min-width:0;background:none;border:0;outline:none;font-size:15px;color:var(--light);letter-spacing:.02em}
+.field input::placeholder{color:var(--grey)}
+.field img{width:18px;height:20px;object-fit:contain;flex:none}
+.btn-pill{position:relative;display:flex;align-items:center;justify-content:center;width:100%;min-height:62px;margin-top:38px;border:0;border-radius:55px;background:var(--light);color:var(--orange);font-family:var(--serif);font-size:15px;line-height:1.35;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:background .2s}
+.btn-pill:hover{background:#fff}
+.btn-pill .gift{position:absolute;top:-10px;left:50%;transform:translateX(-50%);width:19px;height:19px}
+.form-ok{display:none;margin-top:14px;font-size:14px;color:var(--light)}
+
+.offer{color:var(--light)}
+.offer h1,.offer .big{font-family:var(--serif);font-weight:400;font-size:52px;line-height:1.2}
+.offer ul{list-style:none;margin-top:10px;font-family:var(--serif);font-size:22px;line-height:1.37}
+.offer li{position:relative;padding-left:22px;margin-bottom:8px}
+.offer li::before{content:"+";position:absolute;left:0}
+.price-old{display:inline-block;margin-top:26px;font-family:var(--serif);font-style:italic;font-size:34px;line-height:1;opacity:.55;text-decoration:line-through;text-decoration-thickness:2px}
+.price-new{font-family:var(--serif);font-style:italic;font-size:73px;line-height:1}
+.price-date{font-family:var(--serif);font-size:38px;line-height:1.1}
+
+/* ---------- 1. Обложка ---------- */
+.hero{background:var(--orange);background:var(--orange);height:666px;color:var(--light)}
+.hero .wrap{height:100%}
+.top{position:relative;z-index:3;display:flex;align-items:flex-start;padding-top:16px;font-size:15px;line-height:1.35}
+.top .logo{width:183px;flex:none;margin-top:3px}
+.top .tag{margin-left:37px;max-width:407px;color:#fff;margin-top:3px}
+.top .contacts{margin-left:auto;text-align:right;letter-spacing:.02em}
+.hero .offer{position:absolute;left:132px;top:175px;z-index:2;width:350px}
+.hero .lead-card{position:absolute;left:517px;top:151px}
+.hero-photo{position:absolute;right:0;top:34px;width:685px;z-index:1}
+.hero .d-lines{left:0;top:0;width:650px}
+.hero .d-form{left:443px;top:151px;width:682px}
+.hero .d-hero2{right:0;top:445px;width:318px;z-index:2}
+
+/* ---------- 2. На консультации ---------- */
+.get{background:var(--light);background:var(--light);height:531px}
+.get .photo{position:absolute;left:125px;top:59px;width:536px;z-index:1}
+.get .c1{left:72px;top:217px;width:376px;z-index:2}
+.get .txt{position:absolute;left:698px;top:57px;width:540px;z-index:2}
+.checks{list-style:none;margin-top:24px}
+.checks li{display:flex;gap:12px;font-size:16px;line-height:1.5;color:var(--dark);margin-bottom:10px;max-width:510px}
+.checks li img{width:14px;height:14px;margin-top:5px;flex:none}
+
+/* ---------- 3. Бесплатная консультация ---------- */
+.free{height:477px;background:#fff}
+.free .photo{position:absolute;left:695px;top:-32px;width:586px;z-index:1}
+.free .d-cons{left:442px;top:42px;width:535px}
+.free .d-point{right:0;top:278px;width:241px;z-index:2}
+.free .txt{position:absolute;left:180px;top:78px;width:560px;z-index:2}
+.free .txt .spark{width:54px;height:54px;color:var(--orange);margin-bottom:12px}
+.free .txt .spark{stroke-width:1.1}
+.free p{font-family:var(--serif);font-size:35px;line-height:1.3;color:var(--violet)}
+
+/* ---------- 4. Цифры ---------- */
+.stats{background:#7A7599;background:#7A7599;height:528px;color:var(--light)}
+.stats .photo{position:absolute;left:-29px;top:54px;width:356px}
+.stats h2{position:absolute;left:81px;top:144px;font-family:var(--serif);font-weight:400;font-size:80px;line-height:.95;z-index:2;color:var(--light)}
+.stat-grid{position:absolute;left:436px;top:77px;display:grid;grid-template-columns:267px 280px 255px;row-gap:42px}
+.stat img{height:48px;width:auto;margin-bottom:6px}
+.stat b{display:block;font-family:var(--serif);font-weight:400;font-size:46px;line-height:1.1}
+.stat span{display:block;font-family:var(--serif);font-size:20px;line-height:1.35;max-width:235px}
+
+/* ---------- 5. Что будет ---------- */
+.risk{background:var(--light);background:var(--light);height:638px;margin-top:19px}
+.risk .photo{position:absolute;left:56px;top:35px;width:604px;mix-blend-mode:multiply;z-index:1}
+.risk .d-prof1{left:0;top:376px;width:238px;z-index:2}
+.risk .d-prof2{left:327px;top:44px;width:590px}
+.risk .v345{left:369px;top:355px;width:272px;z-index:2}
+.risk .txt{position:absolute;left:700px;top:85px;width:540px;z-index:2}
+.risk p{margin-top:22px;font-size:16px;line-height:1.63;max-width:540px}
+
+/* ---------- 6. Прогресс ---------- */
+.prog{background:var(--orange);background:var(--orange);height:858px}
+.prog h2{position:absolute;left:172px;top:94px;color:var(--light);z-index:2}
+.prog .ph{position:absolute;z-index:1}
+.prog .p1{left:857px;top:90px;width:381px}
+.prog .p2{left:898px;top:399px;width:309px}
+.prog .p3{left:169px;top:251px;width:309px}
+.prog .p4{left:128px;top:503px;width:382px}
+.prog .it{position:absolute;z-index:2;font-family:var(--serif);font-size:22px;line-height:1.24;color:var(--light);width:254px}
+.prog .it .spark{display:block;color:var(--dark);margin-bottom:14px}
+.prog .it.r{text-align:right}
+.prog .it.r .spark{margin-left:auto}
+.prog .i1{left:603px;top:245px}
+.prog .i2{left:521px;top:376px}
+.prog .i3{left:604px;top:521px}
+.prog .i4{left:510px;top:646px;width:337px}
+.prog .g357{left:-397px;top:-128px;width:284px;opacity:.9}
+.prog .v355{right:-1px;top:96px;width:213px}
+.prog .v356{right:0;top:230px;width:126px}
+
+/* ---------- 7. Как проходит консультация ---------- */
+.how{background:var(--light);background:var(--light);padding:68px 0 75px}
+.how .v361{right:-24px;top:3px;width:482px}
+.how h2{text-align:center;position:relative;z-index:2}
+.tl{position:relative;width:852px;margin:68px auto 0;z-index:2}
+.tl::before{content:"";position:absolute;left:424px;top:108px;bottom:200px;border-left:1px solid var(--orange);opacity:.8}
+.tl-row{display:grid;grid-template-columns:375px 54px 375px;column-gap:24px;align-items:start;margin-bottom:-12px}
+.tl-row .pic{width:375px}
+.tl-step h3{font-family:var(--serif);font-weight:400;font-size:35px;line-height:1.2;color:var(--dark)}
+.tl-step p{font-size:16px;line-height:1.63;margin-top:10px}
+.tl-step.l{text-align:right;grid-column:1}
+.tl-step.r{grid-column:3}
+.tl-mark{grid-column:2;display:flex;justify-content:center;color:var(--orange)}
+.tl-row .pic.r{grid-column:3}
+.tl-row .pic.l{grid-column:1}
+.tl-row>*{grid-row:1}
+
+/* ---------- 8. IPL ---------- */
+.ipl{background:#fff;padding-bottom:70px}
+.ipl .video{position:relative;width:700px}
+.ipl .play{position:absolute;left:644px;top:63px;width:91px;z-index:3;border:0;background:none;cursor:pointer;transition:transform .2s}
+.ipl .play:hover{transform:scale(1.06)}
+.ipl .v362{left:574px;top:152px;width:91px;z-index:2}
+.ipl .c3{right:0;top:469px;width:120px}
+.ipl .txt{position:absolute;left:758px;top:72px;width:480px}
+.ipl .txt p{margin-top:24px;font-size:16px;line-height:1.63}
+.steps6{position:relative;margin-top:72px;height:288px}
+.steps6 .bg-word{position:absolute;left:-137px;top:-12px;font-family:var(--serif);font-size:147px;line-height:1;color:var(--light);z-index:0}
+.steps6 .line{position:absolute;left:0;right:21px;top:144px;border-top:1px dashed #cfcfcf}
+.s6{position:absolute;z-index:1;display:flex;gap:14px}
+.s6 .spark{width:29px;height:29px;color:var(--orange);margin-top:2px}
+.s6 h3{font-family:var(--serif);font-weight:400;font-size:35px;line-height:1;color:var(--dark)}
+.s6 p{font-size:16px;line-height:1.45;margin-top:10px}
+.s6::after{content:"";position:absolute;left:14px;border-left:1px dashed #cfcfcf}
+.s6.t::after{top:36px;height:108px}
+.s6.b::after{bottom:100%;height:35px}
+.s6.t{top:0}.s6.b{top:179px}
+.s6.a{left:5px}.s6.c{left:289px}.s6.e{left:593px}
+.s6.bb{left:44px}.s6.dd{left:326px}.s6.ff{left:631px}
+.s6.a p{width:131px}.s6.c p{width:248px}.s6.e p{width:235px}.s6.bb p{width:202px}.s6.dd p{width:148px}.s6.ff p{width:198px}
+.result{position:absolute;right:0;top:67px;width:234px;text-align:right;font-family:var(--serif);font-size:25px;line-height:1.24}
+.result img{width:21px;margin:12px 0 10px auto}
+
+/* ---------- 9. Тарифы ---------- */
+.tariff{background:var(--violet);background:var(--violet);height:985px;color:var(--light)}
+.tariff .photo{position:absolute;left:0;top:54px;width:356px}
+.tariff h2{position:absolute;left:338px;top:81px;font-family:var(--serif);font-weight:400;font-size:55px;line-height:1.12;z-index:2;color:var(--grey);width:640px}
+.tariff h2 .lg{color:var(--grey)}
+.tariff .note{position:absolute;left:128px;top:528px;width:255px;font-family:var(--serif);font-size:25px;line-height:1.24;color:var(--grey)}
+.tariff .d-tar{left:14px;top:586px;width:227px}
+.plans{position:absolute;left:413px;top:262px;display:grid;grid-template-columns:repeat(3,255px);column-gap:30px}
+.plan h3{font-family:var(--serif);font-weight:400;font-size:37.5px;line-height:1.1;white-space:nowrap}
+.plan .sub{font-size:15px;line-height:1.4;color:var(--grey);min-height:63px;margin-top:4px}
+.card{position:relative;height:514px;padding:22px 24px 18px 23px;border-radius:0 46px 0 46px;display:flex;flex-direction:column}
+.card.c-1{background:rgba(255,255,255,.1)}
+.card.c-2{background:var(--dark);border:1px solid var(--light);border-radius:0 46px 0 46px}
+.card.c-3{background:rgba(84,86,90,.4);border:1px solid var(--light)}
+.card .tstar{position:absolute;left:-17px;top:-17px;width:34px;height:34px;color:var(--orange)}
+.card ul{list-style:none}
+.card li{display:flex;gap:10px;font-size:16px;line-height:1.3;margin-bottom:20px;color:var(--light)}
+.card li .spark{width:15px;height:15px;margin-top:2px;color:var(--light)}
+.card li .spark{stroke-width:2.2}
+.card .price{margin-top:auto;text-align:right;font-family:var(--serif);font-style:italic;font-size:30px;line-height:1}
+.card .price s{display:block;font-size:21px;color:var(--grey);opacity:.7}
+.btn-o{display:flex;align-items:center;justify-content:center;width:228px;height:40px;margin:9px 0 0 27px;border:0;border-radius:45px 0 45px 45px;background:var(--orange);color:var(--light);font-family:var(--serif);font-size:16px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:filter .2s}
+.btn-o:hover{filter:brightness(1.07)}
+
+/* ---------- 10. О студии ---------- */
+.about{background:var(--light);background:var(--light);height:651px}
+.about .v10{right:0;top:-58px;width:473px}
+.about .c4{left:0;top:159px;width:224px}
+.about .lead-card{position:absolute;left:249px;top:148px;width:335px;min-height:446px;padding:118px 38px 38px;background:var(--orange);border:0;border-radius:30px 45px 0 45px}
+.about .lead-card .star{left:-27px;top:-27px;color:var(--orange)}
+.about .lead-card h3{font-size:26px;line-height:1.34;color:var(--grey)}
+.about .lead-card .btn-pill{color:var(--dark);margin-top:32px;min-height:45px;letter-spacing:.1em}
+.about .ph{position:absolute;left:284px;top:57px;width:256px;z-index:3}
+.about .txt{position:absolute;left:657px;top:145px;width:555px;z-index:2}
+.about h2{font-family:var(--serif);font-weight:400;font-size:55px;line-height:1;color:var(--violet)}
+.about .big-logo{width:243px;margin-top:6px}
+.about p{margin-top:16px;font-size:16px;line-height:1.56}
+
+/* ---------- 11. Команда ---------- */
+.team{background:#fff;height:515px}
+.team .photo{position:absolute;left:623px;top:-64px;width:705px;z-index:1}
+.team .v696{left:788px;top:349px;width:189px;z-index:2}
+.team .d-team{right:0;top:326px;width:318px;z-index:2}
+.team .txt{position:absolute;left:128px;top:106px;width:532px}
+.team .txt .spark{width:54px;height:54px;color:var(--orange);margin-bottom:22px}
+.team .txt .spark{stroke-width:1.1}
+.team p{font-family:var(--serif);font-size:35px;line-height:1.3;color:var(--violet)}
+
+/* ---------- 12. FAQ ---------- */
+.faq{background:var(--light);background:var(--light);padding:78px 0 82px}
+.faq .photo{position:absolute;left:26px;top:78px;width:618px}
+.faq .c2{left:88px;top:327px;width:376px}
+.faq .txt{position:relative;margin-left:540px;width:569px;z-index:2}
+.acc{margin-top:22px}
+.acc details{background:#fff;border-radius:25px;margin-bottom:6px;transition:background .25s}
+.acc summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:8px 19px;min-height:40px;font-size:16px;line-height:1.55;cursor:pointer}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary img{width:12px;flex:none;transition:transform .25s}
+.acc details[open]{background:var(--orange);border-radius:25px 25px 0 25px;color:var(--light)}
+.acc details[open] summary{padding-top:14px}
+.acc details[open] summary img{transform:rotate(180deg);filter:brightness(0) invert(1)}
+.acc .ans{display:flex;gap:12px;padding:6px 40px 22px 19px;font-size:16px;line-height:1.56;color:var(--light)}
+.acc .ans img{width:30px;height:30px;flex:none;margin-top:2px}
+
+/* ---------- 13-14. Отзывы и До/После ---------- */
+.slider-sec{padding:62px 0 76px}
+.slider-sec.rev{background:#fff}
+.slider-sec.ba{background:var(--light);background:var(--light);padding-bottom:78px}
+.sl-head{display:flex;align-items:center;justify-content:space-between;padding:0 13px}
+.sl-head h2{font-size:45px}
+.arrows{display:flex;gap:12px}
+.arrows button{width:34px;height:34px;border:0;background:none;cursor:pointer;padding:0}
+.arrows button img{width:34px;height:34px}
+.track{display:flex;gap:12px;align-items:flex-start;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;margin-top:28px;padding-bottom:6px;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)}
+.track::-webkit-scrollbar{display:none}
+.track>*{flex:none;scroll-snap-align:start}
+.rcard{background:#fff;border:1px solid #e6e6e6;border-radius:24px;padding:16px 13px;display:flex;gap:10px}
+.ba .track{gap:25px}
+.bcard{background:#fff;border-radius:28px;padding:18px 19px;display:flex;flex-direction:column;gap:8px}
+
+/* ---------- 15. Финал ---------- */
+.final{background:var(--orange);background:var(--orange);height:657px;color:var(--light)}
+.final .photo{position:absolute;left:-21px;top:-45px;width:675px;z-index:1}
+.final .d-lines{left:400px;top:-60px;width:650px;opacity:.9}
+.final .offer{position:absolute;left:519px;top:161px;width:360px;z-index:2}
+.final .lead-card{position:absolute;left:904px;top:137px}
+
+/* ---------- Карта и подвал ---------- */
+.map{position:relative;height:370px;background:#e9e9e9 url(assets/map.webp) center/cover no-repeat}
+.map img{position:absolute;left:calc(50% - 64px);top:141px;width:53px}
+footer{background:var(--light);padding:47px 0 40px}
+.foot{display:grid;grid-template-columns:380px 1fr;column-gap:0}
+.foot .flogo{width:335px}
+.foot .copy{margin-top:30px;font-size:13px;line-height:1.36}
+.foot .info{display:grid;grid-template-columns:317px 205px auto;row-gap:24px;font-size:15px;line-height:1.35;align-items:center}
+.foot .ci{display:flex;align-items:center;gap:14px}
+.foot .ci img{width:40px;height:40px;flex:none}
+.foot .hours{grid-column:1/-1}
+.foot .hours small{display:flex;align-items:center;gap:5px;font-size:15px}
+.foot .hours small .spark{width:14px;height:14px;color:var(--orange)}
+.foot .hours small .spark{stroke-width:2.6}
+
+/* ---------- Адаптив ---------- */
+@media (max-width:960px){
+  .wrap{padding:0 16px}
+  section{height:auto!important}
+  .deco{display:none}
+  .h2{font-size:32px}
+  .hero{padding-bottom:0}
+  .hero>.stage{display:flex;flex-direction:column}
+  .hero .wrap{order:0}.hero .offer{order:1;padding:28px 16px 0}.hero .lead-card{order:2}.hero-photo{order:3}
+  .final .offer{padding:28px 16px 0}
+  .tariff h2{width:auto!important}
+  .top{flex-wrap:wrap;gap:8px}
+  .top .tag{margin-left:0;order:3;width:100%;font-size:14px}
+  .top .contacts{font-size:13px}
+  .hero .offer,.hero .lead-card,.hero-photo,.final .offer,.final .lead-card,.final .photo{position:relative;left:auto;top:auto;right:auto}
+  .hero .offer,.final .offer{width:auto;padding-top:36px}
+  .offer h1,.offer .big{font-size:40px}
+  .offer ul{font-size:19px}
+  .price-new{font-size:60px}
+  .lead-card{width:calc(100% - 32px);max-width:380px;margin:44px auto 0}
+  .hero-photo{width:110%;max-width:none;margin:20px -5% 0}
+  .hero .wrap{height:auto}
+  .get,.free,.risk,.team,.faq,.about,.final{padding:56px 0}
+  .get .photo,.free .photo,.risk .photo,.team .photo,.faq .photo,.stats .photo,.tariff .photo,.about .ph{position:relative;left:auto;top:auto;width:100%;max-width:520px;margin:0 auto}
+  .get .txt,.free .txt,.risk .txt,.team .txt,.about .txt,.ipl .txt{position:relative;left:auto;top:auto;width:auto;padding:0 16px}
+  .get .txt{margin-top:28px}
+  .free .txt,.team .txt{margin-bottom:24px}
+  .free p,.team p{font-size:26px}
+  .free .wrap,.team .wrap{display:flex;flex-direction:column}
+  .stats{padding:0 0 48px}
+  .stats .photo{width:70%;margin:0}
+  .stats h2{left:16px;top:60px;font-size:56px}
+  .stat-grid{position:relative;left:auto;top:auto;grid-template-columns:1fr 1fr;gap:28px 20px;padding:24px 16px 0}
+  .stat b{font-size:36px}.stat span{font-size:17px}
+  .risk{margin-top:0}
+  .risk .txt{margin-top:24px}
+  .prog{padding:48px 0}
+  .prog h2,.prog .ph,.prog .it{position:relative;left:auto;top:auto}
+  .prog .wrap{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .prog h2{grid-column:1/-1;font-size:32px}
+  .prog .ph{width:100%}
+  .prog .it{width:auto;font-size:19px}
+  .prog .it.r{text-align:left}.prog .it.r .spark{margin-left:0}
+  .prog .i4{width:auto}
+  .how{padding:48px 0}
+  .tl{width:auto;margin-top:36px}
+  .tl::before{display:none}
+  .tl-row{grid-template-columns:1fr;margin-bottom:32px;row-gap:14px}
+  .tl-row>*{grid-row:auto!important;grid-column:1!important}
+  .tl-row .pic{width:100%;max-width:420px}
+  .tl-mark{display:none}
+  .tl-step.l{text-align:left}
+  .tl-step h3{font-size:30px}
+  .ipl .video{width:100%}
+  .ipl .play{left:auto;right:12px;top:12px;width:70px}
+  .ipl .txt{margin-top:28px}
+  .steps6{height:auto;display:grid;grid-template-columns:1fr;gap:26px 16px;margin-top:40px}
+  .steps6 .bg-word,.steps6 .line,.s6::after{display:none}
+  .s6{position:relative;left:auto!important;top:auto!important}
+  .s6 p{width:auto!important}
+  .s6 h3{font-size:28px}
+  .result{position:relative;grid-column:1/-1;width:auto;text-align:left;top:auto}
+  .result img{margin-left:0}
+  .s6.bb{order:2}.s6.c{order:3}.s6.dd{order:4}.s6.e{order:5}.s6.ff{order:6}.result{order:7}
+  .tariff{padding:0 0 56px}
+  .tariff .photo{width:60%;margin:0}
+  .tariff h2{position:relative;left:auto;top:auto;font-size:36px;margin-top:24px;padding:0 16px}
+  .tariff .note{position:relative;left:auto;top:auto;width:auto;font-size:20px;padding:24px 16px 0;order:9}
+  .plans{position:relative;left:auto;top:auto;grid-template-columns:1fr;row-gap:44px;padding:36px 16px 0}
+  .plan h3{font-size:32px}.plan .sub{min-height:0;margin-bottom:14px}
+  .card{height:auto;min-height:0;gap:6px}
+  .card .price{margin-top:14px}
+  .btn-o{margin-left:auto}
+  .about .lead-card{position:relative;left:auto;top:auto;margin:-60px auto 0;padding-top:90px}
+  .about .ph{max-width:256px;position:relative;z-index:3}
+  .about .txt{margin-top:40px}
+  .about h2{font-size:44px}
+  .faq .photo{max-width:420px}
+  .faq .txt{margin:28px 0 0;width:auto}
+  .slider-sec{padding:48px 0}
+  .sl-head h2{font-size:32px}
+  .rcard{max-width:86vw;overflow:hidden}
+  .final .photo{width:100%;max-width:460px;margin:0 auto}
+  .final .wrap{display:flex;flex-direction:column}
+  .bl,.br{margin-left:0;margin-right:0}
+  .final{padding-top:0}
+  .map{height:280px}
+  .map img{left:calc(50% - 26px);top:100px}
+  .foot{grid-template-columns:1fr;row-gap:28px}
+  .foot .flogo{width:250px}
+  .foot .info{grid-template-columns:1fr;row-gap:16px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="sp" viewBox="0 0 32 32"><path d="M16 1C16.8 9.2 22.8 15.2 31 16C22.8 16.8 16.8 22.8 16 31C15.2 22.8 9.2 16.8 1 16C9.2 15.2 15.2 9.2 16 1Z"/></symbol>
+</svg>
+
+<main class="page">
+<!-- 1. Обложка -->
+<section class="hero"><div class="stage">
+  <img class="deco d-lines bl" src="assets/dHero.svg" alt="">
+  <img class="deco d-form" src="assets/dForm.svg" alt="">
+  <img class="deco d-hero2 br" src="assets/dHero2.svg" alt="">
+  <img class="hero-photo br" src="assets/hero.webp" alt="Счастливая девушка с&nbsp;чистой кожей" width="685" height="632">
+  <div class="wrap">
+    <header class="top">
+      <img class="logo" src="assets/logo.svg" alt="Metodica Cosmetology" width="183" height="45">
+      <p class="tag">Удаление купероза и&nbsp;сосудистых звёздочек без&nbsp;боли и&nbsp;уколов с&nbsp;помощью проверенной IPL технологии</p>
+      <p class="contacts"><a href="tel:+19177179885">+1&nbsp;917&nbsp;717&nbsp;9885</a><br>626 SHEEPSHEAD BAY RD, BROOKLYN, NY</p>
+    </header>
+  </div>
+  <div class="offer">
+    <h1>Консультация</h1>
+    <ul>
+      <li>Безболезненная диагностика</li>
+      <li>$150 на&nbsp;курс Фототерапии IPL для&nbsp;эффективного устранения видимых сосудов на&nbsp;лице</li>
+    </ul>
+    <s class="price-old">$150</s>
+    <div class="price-new">$100</div>
+    <div class="price-date">до&nbsp;30&nbsp;июля</div>
+  </div>
+  <form class="lead-card" onsubmit="return sent(this)">
+    <svg class="star spark"><use href="#sp"/></svg>
+    <h3>Оставь заявку на&nbsp;консультацию и&nbsp;получи $150 на&nbsp;курс Фототерапии IPL</h3>
+    <label class="field"><input name="name" placeholder="Ваше имя" required aria-label="Ваше имя"><img src="assets/icUser.svg" alt=""></label>
+    <label class="field"><input name="phone" type="tel" placeholder="Номер телефона" required aria-label="Номер телефона"><img src="assets/icTel.svg" alt=""></label>
+    <button class="btn-pill" type="submit"><img class="gift" src="assets/icGift.svg" alt="">Оставить заявку<br>и&nbsp;получить подарок</button>
+    <p class="form-ok">Спасибо! Мы&nbsp;скоро перезвоним.</p>
+  </form>
+</div></section>
+
+<!-- 2. На консультации вы получите -->
+<section class="get"><div class="stage">
+  <img class="photo" src="assets/consult.webp" alt="Девушка с&nbsp;ухоженной кожей" width="536" height="402" loading="lazy">
+  <img class="deco c1" src="assets/c1.svg" alt="">
+  <div class="txt">
+    <h2 class="h2"><span class="v">На&nbsp;консультации</span><br>вы&nbsp;получите</h2>
+    <ul class="checks">
+      <li><img src="assets/liStar.svg" alt="">Полное диагностирование вашей кожи на&nbsp;современном аппарате VISIA</li>
+      <li><img src="assets/liStar.svg" alt="">Консультацию опытного косметолога и&nbsp;информацию о&nbsp;состоянии кожи</li>
+      <li><img src="assets/liStar.svg" alt="">Информацию о&nbsp;возможных причинах появления видимых сосудов</li>
+      <li><img src="assets/liStar.svg" alt="">План рекомендованных процедур для&nbsp;улучшения состояния кожи</li>
+      <li><img src="assets/liStar.svg" alt="">Рекомендации по&nbsp;правильному домашнему уходу</li>
+      <li><img src="assets/liStar.svg" alt="">Развернутые ответы на&nbsp;все ваши вопросы</li>
+    </ul>
+  </div>
+</div></section>
+
+<!-- 3. Консультация бесплатно -->
+<section class="free"><div class="stage">
+  <img class="deco d-cons" src="assets/dCons.svg" alt="">
+  <img class="photo" src="assets/girlpoint.webp" alt="Девушка показывает на&nbsp;текст" width="586" height="509" loading="lazy">
+  <img class="deco d-point br" src="assets/dPoint.svg" alt="">
+  <div class="wrap">
+    <div class="txt">
+      <svg class="spark"><use href="#sp"/></svg>
+      <p>Если вы&nbsp;примете решение купить курс процедур Фототерапия IPL для&nbsp;устранения видимых сосудов в&nbsp;день консультации,<br>то&nbsp;<span class="o">консультация будет для&nbsp;вас бесплатной</span></p>
+    </div>
+  </div>
+</div></section>
+
+<!-- 4. Мы в цифрах -->
+<section class="stats"><div class="stage">
+  <img class="photo bl" src="assets/stats.webp" alt="" width="356" height="474" loading="lazy">
+  <h2>Мы&nbsp;в<br>цифрах</h2>
+  <div class="stat-grid">
+    <div class="stat"><img src="assets/icStat1.svg" alt=""><b>10</b><span>Лет опыта</span></div>
+    <div class="stat"><img src="assets/icStat1.svg" alt=""><b>523</b><span>Счастливых клиента за&nbsp;последний год</span></div>
+    <div class="stat"><img src="assets/icStat3.svg" alt=""><b>6086</b><span>Проведенных процедур Фототерапия IPL</span></div>
+    <div class="stat"><img src="assets/icStat2.svg" alt=""><b>5&nbsp;минут</b><span>Видимый результат через&nbsp;5&nbsp;минут после процедуры</span></div>
+    <div class="stat"><img src="assets/icStat4.svg" alt=""><b>0%</b><span>Рисков и&nbsp;побочных эффектов</span></div>
+    <div class="stat"><img src="assets/icStat5.svg" alt=""><b>24&nbsp;месяца</b><span>Эффект продлится до&nbsp;24&nbsp;месяцев</span></div>
+  </div>
+</div></section>
+
+<!-- 5. Что произойдет -->
+<section class="risk"><div class="stage">
+  <img class="deco d-prof2" src="assets/dProf2.svg" alt="">
+  <img class="photo" src="assets/profile.webp" alt="Девушка в&nbsp;профиль" width="604" height="611" loading="lazy">
+  <img class="deco d-prof1 bl" src="assets/dProf1.svg" alt="">
+  <img class="deco v345" src="assets/v345.svg" alt="">
+  <div class="txt">
+    <h2 class="h2"><span class="v">Что произойдет, если не&nbsp;обращать внимание на&nbsp;купероз и</span> вовремя не&nbsp;устранить сосудистую дисхромию?</h2>
+    <p>Купероз - это расширение, ломкость и&nbsp;потеря эластичности кровеносных сосудов. <span class="o">На&nbsp;коже проблема проявляется сосудистыми звездочками</span>, видимыми сосудами на&nbsp;крыльях носа, щеках и&nbsp;подбородке или общирной капиллярной сеткой. Это говорит о&nbsp;нарушении микроциркуляции - капилляры не&nbsp;обеспечивают кожу кислородом.<br><span class="o">Расширенные сосуды выглядят неэстетично</span> и&nbsp;способны испортить даже самое красивое лицо, понизить самооценку человека и&nbsp;чувствовать себя неуверенно.</p>
+  </div>
+</div></section>
+
+<!-- 6. Купероз будет прогрессировать -->
+<section class="prog"><div class="stage">
+  <img class="deco g357 bl" src="assets/g357.svg" alt="">
+  <img class="deco v355 br" src="assets/v355.svg" alt="">
+  <img class="deco v356 br" src="assets/v356.svg" alt="">
+  <div class="wrap" style="position:static">
+    <h2 class="h2"><span class="d">Со&nbsp;временем</span> купероз<br>будет прогрессировать</h2>
+    <img class="ph p1" src="assets/prog1.webp" alt="Купероз на&nbsp;щеке крупным планом" width="381" height="287" loading="lazy">
+    <div class="it r i1"><svg class="spark"><use href="#sp"/></svg>Видимых сосудов станет больше</div>
+    <img class="ph p3" src="assets/prog3.webp" alt="Покраснения на&nbsp;щеках" width="309" height="232" loading="lazy">
+    <div class="it i2"><svg class="spark"><use href="#sp"/></svg>Кожа станет чувствительной</div>
+    <img class="ph p2" src="assets/prog2.webp" alt="Возрастная кожа" width="309" height="232" loading="lazy">
+    <div class="it r i3"><svg class="spark"><use href="#sp"/></svg>Кожа будет увядать и&nbsp;стареть еще быстрее</div>
+    <img class="ph p4" src="assets/prog4.webp" alt="Маскировка покраснений тональным средством" width="382" height="287" loading="lazy">
+    <div class="it i4"><svg class="spark"><use href="#sp"/></svg>Перед каждым выходом из&nbsp;дома нужно будет маскировать покраснения косметикой</div>
+  </div>
+</div></section>
+
+<!-- 7. Как будет проходить консультация -->
+<section class="how"><div class="stage">
+  <img class="deco v361 br" src="assets/v361.svg" alt="">
+  <h2 class="h2"><span class="v">Как будет</span> проходить консультация?</h2>
+  <div class="tl">
+    <div class="tl-row" style="margin-bottom:-6px">
+      <div class="tl-step l" style="padding-top:65px"><h3>Шаг&nbsp;1.</h3><p>Опытный косметолог осмотрит вашу кожу и&nbsp;задаст уточняющие вопросы: когда проявился купероз, какие были попытки от&nbsp;него избавиться, какой была реакция кожи, была&nbsp;ли у&nbsp;родственников подобная проблема и&nbsp;др.</p></div>
+      <div class="tl-mark" style="padding-top:65px"><svg class="spark"><use href="#sp"/></svg></div>
+      <img class="pic r" src="assets/step1.webp" alt="Косметолог осматривает кожу клиентки" width="375" height="294" loading="lazy">
+    </div>
+    <div class="tl-row">
+      <img class="pic l" src="assets/step2.webp" alt="Диагностика кожи на&nbsp;аппарате VISIA" width="375" height="294" loading="lazy">
+      <div class="tl-mark" style="padding-top:85px"><svg class="spark"><use href="#sp"/></svg></div>
+      <div class="tl-step r" style="padding-top:85px"><h3>Шаг&nbsp;2.</h3><p>Вам проведут аппаратную диагностику на&nbsp;оборудовании VISIA для&nbsp;выявления участков кожи с&nbsp;куперозом, его количество и&nbsp;глубина нахождения проблемных сосудов</p></div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-step l" style="padding-top:98px"><h3>Шаг&nbsp;3.</h3><p>Вы&nbsp;получите план рекомендованных процедур для&nbsp;улучшения состояния кожи</p></div>
+      <div class="tl-mark" style="padding-top:98px"><svg class="spark"><use href="#sp"/></svg></div>
+      <img class="pic r" src="assets/step3.webp" alt="Косметолог обсуждает план процедур" width="375" height="294" loading="lazy">
+    </div>
+    <div class="tl-row">
+      <img class="pic l" src="assets/step4.webp" alt="Разбор результатов диагностики" width="375" height="294" loading="lazy">
+      <div class="tl-mark" style="padding-top:85px"><svg class="spark"><use href="#sp"/></svg></div>
+      <div class="tl-step r" style="padding-top:85px"><h3>Шаг&nbsp;4.</h3><p>Вы&nbsp;получите развернутые ответы на&nbsp;все ваши вопросы и&nbsp;информацию о&nbsp;возможных причинах появления видимых сосудов</p></div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-step l" style="padding-top:104px"><h3>Шаг&nbsp;5.</h3><p>Вам дадут рекомендации по&nbsp;правильному домашнему уходу</p></div>
+      <div class="tl-mark" style="padding-top:104px"><svg class="spark"><use href="#sp"/></svg></div>
+      <img class="pic r" src="assets/step5.webp" alt="Подбор домашнего ухода" width="375" height="294" loading="lazy">
+    </div>
+  </div>
+</div></section>
+
+<!-- 8. Как быстро устранить купероз -->
+<section class="ipl"><div class="stage">
+  <div class="video bl">
+    <img src="assets/video.webp" alt="Процедура фототерапии IPL" width="700" height="525" loading="lazy">
+  </div>
+  <img class="deco v362 bl" src="assets/v362.svg" alt="">
+  <button class="play bl" type="button" aria-label="Смотреть видео о&nbsp;процедуре"><img src="assets/play.svg" alt=""></button>
+  <img class="deco c3 br" src="assets/c3.svg" alt="">
+  <div class="txt">
+    <h2 class="h2">Как быстро<br>и&nbsp;<span class="v">безболезненно устранить купероз?</span></h2>
+    <p><span class="o">Фототерапия IPL - самый быстрый, эффективный и&nbsp;безболезненный способ устранения купероза.</span> IPL - это воздействие на&nbsp;кожу широкополосным импульсным светом.<br><br>Вспышки света коагулируют расширенные сосуды, их&nbsp;состояние приходит в&nbsp;норму, и&nbsp;они исчезают с&nbsp;поверхности кожи.</p>
+  </div>
+  <div class="wrap">
+    <div class="steps6">
+      <div class="bg-word" aria-hidden="true">Шаги</div>
+      <div class="line"></div>
+      <div class="s6 t a"><svg class="spark"><use href="#sp"/></svg><div><h3>Шаг&nbsp;1.</h3><p>Очищение кожи</p></div></div>
+      <div class="s6 b bb"><svg class="spark"><use href="#sp"/></svg><div><h3>Шаг&nbsp;2.</h3><p>Нанесение геля-проводника</p></div></div>
+      <div class="s6 t c"><svg class="spark"><use href="#sp"/></svg><div><h3>Шаг&nbsp;3.</h3><p>Выставление индивидуальных параметров на&nbsp;оборудовании на&nbsp;основании проведенной диагностики</p></div></div>
+      <div class="s6 b dd"><svg class="spark"><use href="#sp"/></svg><div><h3>Шаг&nbsp;4.</h3><p>Тестовая вспышка</p></div></div>
+      <div class="s6 t e"><svg class="spark"><use href="#sp"/></svg><div><h3>Шаг&nbsp;5.</h3><p>Обработка участков кожи с&nbsp;куперозом. Процедура занимает 10-15&nbsp;минут.</p></div></div>
+      <div class="s6 b ff"><svg class="spark"><use href="#sp"/></svg><div><h3>Шаг&nbsp;6.</h3><p>Очищение кожи от&nbsp;геля и&nbsp;нанесение успокаивающего крема</p></div></div>
+      <div class="result"><span class="v">Результат вы&nbsp;сможете оценить</span><img src="assets/resdot.svg" alt=""><span class="o">сразу<br>после процедуры!</span></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- 9. Тарифы -->
+<section class="tariff" id="tariffs"><div class="stage">
+  <img class="photo bl" src="assets/tariff.webp" alt="Массаж лица" width="356" height="474" loading="lazy">
+  <img class="deco d-tar bl" src="assets/dTar.svg" alt="">
+  <h2>Что входит в&nbsp;<span style="color:#fff">тарифные пакеты</span></h2>
+  <p class="note"><span class="o">*</span>При покупке курса процедур Фототерапия IPL в&nbsp;день консультации - консультация будет для&nbsp;вас бесплатной</p>
+  <div class="plans">
+    <div class="plan">
+      <h3>Консультация</h3><p class="sub">+ диагностика</p>
+      <div class="card c-1"><ul>
+        <li><svg class="spark"><use href="#sp"/></svg>Консультация косметолога</li>
+        <li><svg class="spark"><use href="#sp"/></svg>Диагностика кожи</li>
+        <li><svg class="spark"><use href="#sp"/></svg>План рекомендуемых процедур</li>
+      </ul><div class="price">$100</div></div>
+      <button class="btn-o" type="button" onclick="toForm()">Оставить заявку</button>
+    </div>
+    <div class="plan">
+      <h3>Консультация</h3><p class="sub">+ диагностика + бонус</p>
+      <div class="card c-2"><svg class="tstar spark fill"><use href="#sp"/></svg><ul>
+        <li><svg class="spark"><use href="#sp"/></svg>Консультация косметолога</li>
+        <li><svg class="spark"><use href="#sp"/></svg>Диагностика кожи</li>
+        <li><svg class="spark"><use href="#sp"/></svg>План рекомендуемых процедур</li>
+        <li><svg class="spark"><use href="#sp"/></svg>Подарок $150 на&nbsp;курс Фототерапии IPL</li>
+        <li><svg class="spark"><use href="#sp"/></svg>Первая консультация в&nbsp;подарок при&nbsp;покупке IPL курса в&nbsp;день консультации</li>
+      </ul><div class="price"><s>$250</s>$100</div></div>
+      <button class="btn-o" type="button" onclick="toForm()">Оставить заявку</button>
+    </div>
+    <div class="plan">
+      <h3>Консультация</h3><p class="sub">+ диагностика + бонус<br>+ подбор домашнего ухода</p>
+      <div class="card c-3"><ul>
+        <li><svg class="spark"><use href="#sp"/></svg>Консультация косметолога</li>
+        <li><svg class="spark"><use href="#sp"/></svg>Диагностика кожи</li>
+        <li><svg class="spark"><use href="#sp"/></svg>План рекомендуемых процедур</li>
+        <li><svg class="spark"><use href="#sp"/></svg>Подарок $150 на&nbsp;курс Фототерапии IPL</li>
+        <li><svg class="spark"><use href="#sp"/></svg>Первая консультация в&nbsp;подарок при&nbsp;покупке IPL курса в&nbsp;день консультации</li>
+        <li><svg class="spark"><use href="#sp"/></svg>Подбор домашнего ухода</li>
+        <li><svg class="spark"><use href="#sp"/></svg>Сопровождение до&nbsp;результата</li>
+      </ul><div class="price">$300</div></div>
+      <button class="btn-o" type="button" onclick="toForm()">Оставить заявку</button>
+    </div>
+  </div>
+</div></section>
+
+<!-- 10. О студии -->
+<section class="about"><div class="stage">
+  <img class="deco v10 br" src="assets/v10.svg" alt="">
+  <img class="deco c4 bl" src="assets/c4.svg" alt="">
+  <div class="wrap" style="position:static">
+    <img class="ph" src="assets/about.webp" alt="Улыбающаяся клиентка студии" width="256" height="192" loading="lazy">
+    <form class="lead-card" onsubmit="return sent(this)">
+      <svg class="star spark fill"><use href="#sp"/></svg>
+      <h3>Записаться и&nbsp;получить бонус $150 на&nbsp;курс фототерапии IPL</h3>
+      <label class="field"><input name="name" placeholder="Ваше имя" required aria-label="Ваше имя"><img src="assets/icUser.svg" alt=""></label>
+      <label class="field"><input name="phone" type="tel" placeholder="Номер телефона" required aria-label="Номер телефона"><img src="assets/icTel.svg" alt=""></label>
+      <button class="btn-pill" type="submit">Записаться</button>
+      <p class="form-ok">Спасибо! Мы&nbsp;скоро перезвоним.</p>
+    </form>
+    <div class="txt">
+      <h2>О&nbsp;студии</h2>
+      <img class="big-logo" src="assets/logo-dark.svg" alt="Metodica" width="243" height="60">
+      <p>METODICA работает, чтобы сохранить и&nbsp;продлить молодость наших клиентов и&nbsp;сделать их&nbsp;самыми счастливыми.<br><br>Для&nbsp;этого используется самое современное оборудование FDA approved, самые последние клинические рекомендации и&nbsp;новшества доказательной косметологии.<br><br>Мы&nbsp;постоянно повышаем свою квалификацию.<br><span class="o">Наша главная задача - это ваш результат.</span></p>
+    </div>
+  </div>
+</div></section>
+
+<!-- 11. Сопровождение -->
+<section class="team"><div class="stage">
+  <img class="photo" src="assets/team.webp" alt="Косметолог студии Metodica" width="705" height="579" loading="lazy">
+  <img class="deco v696" src="assets/v696.svg" alt="">
+  <img class="deco d-team br" src="assets/dTeam.svg" alt="">
+  <div class="txt">
+    <svg class="spark"><use href="#sp"/></svg>
+    <p>Мы&nbsp;сопровождаем клиента, пока вместе не&nbsp;достигнем результата.<br><span class="o">Будем рады видеть вас среди наших клиентов.</span></p>
+  </div>
+</div></section>
+
+<!-- 12. FAQ -->
+<section class="faq"><div class="stage">
+  <img class="photo" src="assets/faq.webp" alt="Улыбающаяся девушка" width="618" height="465" loading="lazy">
+  <img class="deco c2" src="assets/c2.svg" alt="">
+  <div class="wrap">
+    <div class="txt">
+      <h2 class="h2"><span class="v">Часто задаваемые</span> вопросы</h2>
+      <div class="acc">
+        <details><summary>Можно&nbsp;ли избавиться от&nbsp;сосудистых звездочек в&nbsp;домашних условиях?<img src="assets/chev.svg" alt=""></summary><div class="ans"><img src="assets/faqIc.svg" alt=""><p>Ответ уточняется у&nbsp;клиники.</p></div></details>
+        <details open><summary>Болезненно&nbsp;ли удаление сосудистых звездочек с&nbsp;помощью фототерапии IPL?<img src="assets/chev.svg" alt=""></summary><div class="ans"><img src="assets/faqIc.svg" alt=""><p>Современная технология CoolScan и&nbsp;контактное охлаждение делают процедуру комфортной. Во&nbsp;время фотовспышек клиент может ощущать только тепло и&nbsp;небольшое покалывание.</p></div></details>
+        <details><summary>Почему появляются "сосудистые звездочки"?<img src="assets/chev.svg" alt=""></summary><div class="ans"><img src="assets/faqIc.svg" alt=""><p>Ответ уточняется у&nbsp;клиники.</p></div></details>
+        <details><summary>Опасны&nbsp;ли "сосудистые звездочки"?<img src="assets/chev.svg" alt=""></summary><div class="ans"><img src="assets/faqIc.svg" alt=""><p>Ответ уточняется у&nbsp;клиники.</p></div></details>
+        <details><summary>Почему "сосудистые звездочки" нужно удалять?<img src="assets/chev.svg" alt=""></summary><div class="ans"><img src="assets/faqIc.svg" alt=""><p>Ответ уточняется у&nbsp;клиники.</p></div></details>
+        <details><summary>Нужна&nbsp;ли специальная подготовка перед процедурой?<img src="assets/chev.svg" alt=""></summary><div class="ans"><img src="assets/faqIc.svg" alt=""><p>Ответ уточняется у&nbsp;клиники.</p></div></details>
+        <details><summary>Какой уход требуется после удаления?<img src="assets/chev.svg" alt=""></summary><div class="ans"><img src="assets/faqIc.svg" alt=""><p>Ответ уточняется у&nbsp;клиники.</p></div></details>
+        <details><summary>С&nbsp;какого возраста можно удалять "сосудистые звездочки"?<img src="assets/chev.svg" alt=""></summary><div class="ans"><img src="assets/faqIc.svg" alt=""><p>Ответ уточняется у&nbsp;клиники.</p></div></details>
+        <details><summary>Есть&nbsp;ли противопоказания?<img src="assets/chev.svg" alt=""></summary><div class="ans"><img src="assets/faqIc.svg" alt=""><p>Ответ уточняется у&nbsp;клиники.</p></div></details>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- 13. Отзывы -->
+<section class="slider-sec rev"><div class="stage">
+  <div class="wrap">
+    <div class="sl-head"><h2 class="h2 v">Отзывы</h2><div class="arrows"><button type="button" data-dir="-1" aria-label="Назад"><img src="assets/arrowL.svg" alt=""></button><button type="button" data-dir="1" aria-label="Вперёд"><img src="assets/arrowR.svg" alt=""></button></div></div>
+    <div class="track">
+      <div class="rcard"><img src="assets/rev1.webp" alt="Отзыв клиентки" width="217" height="241" loading="lazy"></div>
+      <div class="rcard"><img src="assets/rev2.webp" alt="Отзыв клиентки" width="297" height="157" loading="lazy"></div>
+      <div class="rcard"><img src="assets/rev3a.webp" alt="Отзыв клиентки" width="201" height="252" loading="lazy"><img src="assets/rev3b.webp" alt="Фото клиентки" width="202" height="187" loading="lazy"></div>
+      <div class="rcard"><img src="assets/rev4.webp" alt="Отзыв клиентки" width="265" height="218" loading="lazy"></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- 14. До/После -->
+<section class="slider-sec ba"><div class="stage">
+  <div class="wrap">
+    <div class="sl-head"><h2 class="h2"><span class="v">Результаты</span> ДО/ПОСЛЕ</h2><div class="arrows"><button type="button" data-dir="-1" aria-label="Назад"><img src="assets/arrowL.svg" alt=""></button><button type="button" data-dir="1" aria-label="Вперёд"><img src="assets/arrowR.svg" alt=""></button></div></div>
+    <div class="track">
+      <div class="bcard"><img src="assets/ba1.webp" alt="До и&nbsp;после: лицо" width="270" height="173" loading="lazy"><div style="display:flex;gap:19px"><img src="assets/ba1b.webp" alt="" width="121" height="62" loading="lazy"><img src="assets/ba1c.webp" alt="" width="121" height="63" loading="lazy"></div></div>
+      <div class="bcard"><img src="assets/ba2.webp" alt="До и&nbsp;после: сосуды у&nbsp;губ" width="215" height="242" loading="lazy"></div>
+      <div class="bcard"><img src="assets/ba3.webp" alt="До и&nbsp;после: сосуды на&nbsp;носу" width="489" height="239" loading="lazy"></div>
+      <div class="bcard"><img src="assets/ba4.webp" alt="До и&nbsp;после" width="202" height="242" loading="lazy"></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- 15. Финал -->
+<section class="final" id="form"><div class="stage">
+  <img class="deco d-lines" src="assets/dHero.svg" alt="">
+  <img class="photo bl" src="assets/final.webp" alt="Девушка с&nbsp;чистой кожей" width="675" height="702" loading="lazy">
+  <div class="wrap" style="position:static">
+    <div class="offer">
+      <div class="big">Консультация</div>
+      <ul>
+        <li>Безболезненная диагностика</li>
+        <li>$150 на&nbsp;курс Фототерапии IPL для&nbsp;эффективного устранения видимых сосудов на&nbsp;лице</li>
+      </ul>
+      <s class="price-old">$150</s>
+      <div class="price-new">$100</div>
+      <div class="price-date">до&nbsp;30&nbsp;июля</div>
+    </div>
+    <form class="lead-card" onsubmit="return sent(this)">
+      <svg class="star spark"><use href="#sp"/></svg>
+      <h3>Оставь заявку на&nbsp;консультацию и&nbsp;получи $150 на&nbsp;курс Фототерапии IPL</h3>
+      <label class="field"><input name="name" placeholder="Ваше имя" required aria-label="Ваше имя"><img src="assets/icUser.svg" alt=""></label>
+      <label class="field"><input name="phone" type="tel" placeholder="Номер телефона" required aria-label="Номер телефона"><img src="assets/icTel.svg" alt=""></label>
+      <button class="btn-pill" type="submit"><img class="gift" src="assets/icGift.svg" alt="">Оставить заявку<br>и&nbsp;получить подарок</button>
+      <p class="form-ok">Спасибо! Мы&nbsp;скоро перезвоним.</p>
+    </form>
+  </div>
+</div></section>
+
+<div class="map" role="img" aria-label="Карта: 626 Sheepshead Bay Rd, Brooklyn"><img src="assets/pin.svg" alt=""></div>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <img class="flogo" src="assets/footlogo.svg" alt="Metodica Cosmetology" width="335" height="79">
+      <p class="copy">Copyright 2022. Metodica Cosmetology.<br>Все права защищены.</p>
+    </div>
+    <div class="info">
+      <div class="ci"><img src="assets/icAddr.svg" alt="">626 SHEEPSHEAD BAY RD,<br>BROOKLYN, NY</div>
+      <a class="ci" href="tel:+19177179885"><img src="assets/icPhone.svg" alt="">+1&nbsp;917&nbsp;71&nbsp;79&nbsp;885</a>
+      <a class="ci" href="https://instagram.com/aestetic_ok" target="_blank" rel="noopener"><img src="assets/icInsta.svg" alt="">aestetic_ok</a>
+      <div class="ci hours"><img src="assets/icClock.svg" alt=""><div>Часы работы: вторник, среда, пятница, суббота, воскресенье<small><svg class="spark"><use href="#sp"/></svg>9:00 - 20:00</small></div></div>
+    </div>
+  </div>
+</footer>
+
+</main>
+<script>
+function sent(f){f.querySelector('.form-ok').style.display='block';f.querySelector('button[type=submit]').disabled=true;return false}
+function fit(){var p=document.querySelector(".page"),w=document.documentElement.clientWidth;p.style.zoom=(w>960&&w<1366)?w/1366:""}fit();addEventListener("resize",fit);
+function toForm(){document.getElementById('form').scrollIntoView({behavior:'smooth'})}
+document.querySelectorAll('.slider-sec').forEach(function(s){
+  var t=s.querySelector('.track');
+  s.querySelectorAll('.arrows button').forEach(function(b){
+    b.addEventListener('click',function(){t.scrollBy({left:+b.dataset.dir*(t.clientWidth*0.6),behavior:'smooth'})});
+  });
+});
+</script>
+</body>
+</html>
